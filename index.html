@@ -167,8 +167,8 @@ a{color:inherit;text-decoration:none}
 .rank-card:hover .rank-emblem{transform:translateY(-4px) rotate(-4deg) scale(1.05)}
 .rank-letter{position:relative;z-index:1;font-size:40px;font-weight:900;color:#fff;
   text-shadow:0 3px 8px rgba(0,0,0,.25)}
-.rank-art{width:100%;height:180px;margin:0 auto 16px;display:grid;place-items:center;overflow:hidden;border-radius:16px;}
-.rank-art img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;transition:transform .35s ease,filter .35s ease;filter:drop-shadow(0 8px 18px var(--rc-sh));}
+.rank-art{width:100%;height:180px;margin:0 auto 16px;display:grid;place-items:center;overflow:hidden;border-radius:16px;background:linear-gradient(145deg,#fff7f0,#f8fafc);}
+.rank-art img{display:block;width:auto;height:auto;max-width:100%;max-height:180px;object-fit:contain;object-position:center;transition:transform .35s ease,filter .35s ease;filter:drop-shadow(0 8px 18px var(--rc-sh));}
 .rank-art.rank-art-natural img{width:auto;height:auto;max-width:100%;max-height:180px;object-fit:contain;}
 .rank-card:hover .rank-art img{transform:scale(1.05);filter:drop-shadow(0 10px 24px var(--rc-sh)) brightness(1.06);}
 .rank-fallback{width:92px;height:92px;margin:4px auto 16px;border-radius:20px;display:grid;place-items:center;background:linear-gradient(145deg,var(--rc1),var(--rc2));color:#fff;font-size:29px;font-weight:900;letter-spacing:1px;text-shadow:0 3px 10px #0004;box-shadow:0 12px 26px var(--rc-sh),inset 0 2px 6px #ffffff55}.rank-points{font-size:13px;font-weight:800;color:var(--or2);margin-top:3px}
@@ -229,7 +229,8 @@ a{color:inherit;text-decoration:none}
 .case-card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}
 .case-art{height:155px;display:grid;place-items:center;margin:0 auto 16px;border-radius:16px;background:radial-gradient(circle at 50% 35%,var(--case-glow),transparent 62%),linear-gradient(145deg,#fff,#f7f7f7);}
 .case-chest{font-size:88px;line-height:1;filter:drop-shadow(0 10px 14px var(--case-shadow));}
-.case-card h3{font-size:21px;margin:0 0 8px;color:var(--ink)}
+.case-card h3{font-size:20px;margin:0 0 8px;color:var(--ink)}
+.case-card .btn{width:100%;justify-content:center;padding:13px 12px;font-size:14px}
 .case-card p{font-size:14px;color:var(--muted);min-height:42px;margin:0 0 16px}
 .case-price{font-size:27px;font-weight:900;margin-bottom:12px}
 .case-status{display:block;border-radius:12px;padding:11px 12px;font-size:13px;font-weight:800;background:#fff4e8;color:#b45309;border:1px solid #fed7aa}
@@ -263,6 +264,7 @@ a{color:inherit;text-decoration:none}
     <a href="#about">О сервере</a>
     <a href="#features">Возможности</a>
     <a href="#donate">Донат</a>
+    <a href="#cases">Кейсы</a>
     <a href="#community">Сообщество</a>
   </nav>
   <a class="btn btn-primary btn-sm" href="#donate">Купить</a>
@@ -330,9 +332,41 @@ a{color:inherit;text-decoration:none}
   <div class="donate-grid" id="donateGrid"></div>
 </section>
 
-
 <!-- CASES -->
-
+<section id="cases" class="section section-alt">
+  <div class="section-head reveal">
+    <p class="eyebrow">Магазин RoiceWorld</p>
+    <h2>Кейсы</h2>
+    <p class="section-lead">Выбери кейс и напиши администрации, чтобы оформить покупку.</p>
+  </div>
+  <div class="cases-grid">
+    <article class="case-card reveal" style="--case-glow:#fbbf24;--case-shadow:#f59e0b">
+      <div class="case-art"><span class="case-chest" aria-hidden="true">💰</span></div>
+      <h3>Кейс с валютой ×10</h3><p>Награды с риликами и полезными ресурсами.</p>
+      <div class="case-price">80 ₽</div>
+      <a class="btn btn-primary" href="https://discord.gg/CD6ssKx3Q" target="_blank" rel="noopener">Заказать в Discord</a>
+    </article>
+    <article class="case-card reveal" style="--case-glow:#c084fc;--case-shadow:#9333ea">
+      <div class="case-art"><span class="case-chest" aria-hidden="true">🎁</span></div>
+      <h3>Кейс «Вип или ничего»</h3><p>Попробуй получить VIP-статус или другую награду.</p>
+      <div class="case-price">150 ₽</div>
+      <a class="btn btn-primary" href="https://discord.gg/CD6ssKx3Q" target="_blank" rel="noopener">Заказать в Discord</a>
+    </article>
+    <article class="case-card reveal" style="--case-glow:#fb7185;--case-shadow:#dc2626">
+      <div class="case-art"><span class="case-chest" aria-hidden="true">👑</span></div>
+      <h3>Легендарный кейс</h3><p>Особые предметы и редкие награды.</p>
+      <div class="case-price">120 ₽</div>
+      <a class="btn btn-primary" href="https://discord.gg/CD6ssKx3Q" target="_blank" rel="noopener">Заказать в Discord</a>
+    </article>
+    <article class="case-card reveal" style="--case-glow:#22d3ee;--case-shadow:#0891b2">
+      <div class="case-art"><span class="case-chest" aria-hidden="true">💎</span></div>
+      <h3>Кейсы с криптокриптами ×10</h3><p>Набор криптокриптов и дополнительных наград.</p>
+      <div class="case-price">50 ₽</div>
+      <a class="btn btn-primary" href="https://discord.gg/CD6ssKx3Q" target="_blank" rel="noopener">Заказать в Discord</a>
+    </article>
+  </div>
+  <p class="case-note">Покупка оформляется через администрацию в Discord. Онлайн-оплата на сайте пока не подключена.</p>
+</section>
 
 <!-- COMMUNITY -->
 <section id="community" class="section section-alt">
